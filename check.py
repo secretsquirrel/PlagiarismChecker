@@ -58,7 +58,7 @@ class Checker():
             # check for plagiarism
             result = any(list(some_list) == self.mlist[k:self.chck_len+k] for k in range(len(self.mlist) -1))
             if result:
-                print ("[!] Found plagiarism..:", list(some_list))
+                print ("[!] Found plagiarism:", list(some_list))
                 print ("=" * 50)
 
     def check(self):
