@@ -28,13 +28,19 @@ $ wc test_output.txt
 $ cat data/fw/input.txt
 4078  214831 1230725
 
+```
 
+With checking synonyms:
+```
 $ time python3 ../PlagiarismChecker/check.py test_output.txt input.txt t 6
 
 real    8m19.381s
 user    8m19.288s
 sys 0m0.028s
+```
 
+Without checking synonyms:
+```
 $ time python3 ../PlagiarismChecker/check.py test_output.txt input.txt f 6
 
 real    0m21.929s
