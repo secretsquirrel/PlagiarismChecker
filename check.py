@@ -6,29 +6,6 @@ import os
 import itertools
 from distutils.util import strtobool
 
-'''
-$ wc test_output.txt
-2  202 1170 test_output.txt
-
-$ cat data/fw/input.txt
-  4078  214831 1230725
-
-
-$ time python3 ../PlagiarismChecker/check.py test_output.txt input.txt t 6
-
-real    8m19.381s
-user    8m19.288s
-sys 0m0.028s
-
-$ time python3 ../PlagiarismChecker/check.py test_output.txt input.txt f 6
-
-real    0m21.929s
-user    0m21.880s
-sys 0m0.044s
-
-'''
-
-
 class Checker():
     """
     This is a class is a simple plagiarism checker for case insensitive matching.
