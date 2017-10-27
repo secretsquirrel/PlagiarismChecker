@@ -19,7 +19,6 @@ class Checker():
         self.master_text = master_text
         self.check_synonyms = bool(strtobool(check_synonyms))
         self.chck_len = chck_len
-        self.checking_list = []
         self.synonyms = json.load(open(os.path.dirname(os.path.abspath(__file__)) +'/support/src.json', 'r'))
         self.prep()
         self.check()
