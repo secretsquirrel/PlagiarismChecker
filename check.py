@@ -8,7 +8,7 @@ from distutils.util import strtobool
 
 class Checker():
     """
-    This is a class is a simple plagiarism checker for case insensitive matching.
+    This class is a simple plagiarism checker for case insensitive matching.
     """
     def __init__(self, input_text, master_text, check_synonyms=True, chck_len=6):
         """
